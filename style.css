@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: slateblue;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    height: 96vh;
+    padding: 2vh 2vw 2vh 2vw;
+    background-color: rgb(236, 220, 220);
+    width: 500px;
+    display: block;
+}
+
+.add{
+    position: fixed;
+    bottom: 4vh;
+    right: 28vw;
+    padding: 20px;
+    background-color: violet;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.add:hover{
+    width: 100px;
+    text-align: right;
+    border-radius: 50px;
+    cursor: pointer;
+    content: "Add button";
+}
+
+.delete-this:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.lists{
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 10px;
+    margin: 20px;
+    overflow-y: scroll;
+    height: 85vh;
+    align-content: flex-start;
+}
+
+.lists::-webkit-scrollbar {
+    display:none;
+}
+
+.list_item{
+    margin: 10px;
+    background-color: mediumseagreen;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+
+#inputData{
+    position: fixed;
+    top: 25%;
+    right: 35%;
+    display: none;
+    background-color: dodgerblue;
+    /* padding: 30px; */
+    width: 30vw;
+}
+
+.inputHeadingClass{
+    margin: 30px;
+}
+
+input{
+    width: 25vw;
+    height: 4vh;
+    padding: 6px;
+}
+
+textarea{
+    width: 25vw;
+    height: 14vh;
+    margin: 0 30px 30px 30px;
+    padding: 10px;
+}
+
+.submit{
+    width: 100px;
+    padding: 10px 30px 10px 30px;
+    margin: 0 20px 20px 0;
+}
+
+.closeButton{
+    text-align: right; padding: 10px 10px 0 0;
+}
+
+.closeButton:hover, .complete:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.div-bottom{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delete-this, .complete{
+    padding: 10px;
+}

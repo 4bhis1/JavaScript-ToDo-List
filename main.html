@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To Do List</title>
+</head>
+<body>
+    
+    <div id="inputData">
+        <div onclick="hide()" class="closeButton">
+            close
+        </div>
+        <div class="inputHeadingClass">
+            <input type="text" placeholder="Heading" id="inputHeading" required>
+            <!-- <input type="checkbox" value="Done"> -->
+        </div>
+        
+        <textarea id="inputContent" placeholder="Contnet"></textarea>
+        <div class="submitButton" style="text-align: right;">
+            <button class="submit" onclick="addItem()" >Submit</button>
+        </div>
+        
+    </div>
+
+    <div class="main" id="main">
+        
+        <div class="add" onclick="show()" id="add">+</div>
+
+        
+
+        <h1 style="text-align: center;">To-do List</h1>
+
+        <div class="lists" id="lists">
+
+            <!-- <div class="list_item">
+                <div class="sr">1</div>
+                <div class="delete-this" onclick="dropFromList(2)">
+                    delete
+                </div>
+                <div class="heading">Hello</div>
+                <div class="done">Square box</div>
+                <div class="content">Content</div>
+            </div> -->
+
+        </div>
+    </div>
+    
+
+
+</body>
+<script src="script.js"></script>
+</html>
